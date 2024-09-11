@@ -7,7 +7,7 @@ This is a basic Flask web app that provides users with interesting facts about M
 
 - **Marvel Page:** Fun facts about the Marvel universe.
 - **DC Page:** Fun facts about the DC universe.
-- **About Me Page:** Personal information about the developer.
+- **About Me Page:** Personal information about the developer (me).
 - **Current Date/Time:** Displays the current date and time dynamically.
 - **Navigation:** Simple navigation links between pages.
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding -->
+    <meta charset="UTF-8">
+    <!-- Configure viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
+    <title>About Me</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Heading for the About Me page -->
+    <h2>This is Me</h2>
+    
+    <!-- Unordered list with personal information -->
+    <ul>
+        <!-- List item: Name -->
+        <li>Name: Brandon Chaimiti</li>
+        <!-- List item: Course -->
+        <li>Course: Building Secure Python Applications</li>
+        <!-- List item: Project name -->
+        <li>Project name: Flask HTML Rendering</li>
+    </ul>
+    
+    <!-- Unordered list of navigation links -->
+    <ul>
+        <!-- Link to Marvel information page -->
+        <li><a href="{{ url_for('marvel') }}">Marvel</a></li>
+        <!-- Link to DC information page -->
+        <li><a href="{{ url_for('dc') }}">DC</a></li>
+        <!-- Link to Home page -->
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+    </ul>
+    
+    <!-- Display current date and time -->
+    <p>Current date and time: {{ current_time }}</p>
+</body>
+
+</html>

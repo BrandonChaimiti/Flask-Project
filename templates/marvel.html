@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding -->
+    <meta charset="UTF-8">
+    <!-- Configure viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
+    <title>Marvel Universe</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Heading for the Marvel Universe page -->
+    <h2>Fun Marvel Facts</h2>
+    
+    <!-- Ordered list of Marvel facts -->
+    <ol>
+        <!-- Marvel Fact 1: Stan Lee's Cameos -->
+        <li>Stan Lee's Cameos: The late Stan Lee, the legendary co-creator 
+            of many Marvel superheroes, made cameo appearances in nearly 
+            every Marvel Cinematic Universe (MCU) film. These cameos became 
+            a beloved Easter egg for fans, and Lee's presence is dearly 
+            missed in the newer Marvel films.</li>
+        
+        <!-- Marvel Fact 2: First Comic - The Fantastic Four -->
+        <li>First Comic: The Fantastic Four: Marvel Comics as we know it today 
+            began with the release of "The Fantastic Four" #1 in 1961. Created 
+            by Stan Lee and Jack Kirby, this superhero team marked the beginning 
+            of the Marvel Universe and set the stage for many more iconic characters 
+            and stories.</li>
+        
+        <!-- Marvel Fact 3: Deadpool's Unique Character -->
+        <li>Deadpool's Unique Character: Deadpool, also known as the "Merc with a Mouth," 
+            is a unique Marvel character known for breaking the fourth wall, meaning he is 
+            aware that he is a fictional character. This self-awareness, combined with his 
+            irreverent humor, makes Deadpool a distinctive and popular character.</li>
+        
+        <!-- Marvel Fact 4: Wakanda and Vibranium -->
+        <li>Wakanda and Vibranium: The fictional African nation of Wakanda, home to the Black 
+            Panther, is one of the most technologically advanced countries in the Marvel Universe. 
+            It is the sole source of vibranium, a rare and powerful metal. Vibranium is known for 
+            its unique properties, including being used in Captain America's shield.</li>
+    </ol>
+    
+    <!-- Unordered list of navigation links -->
+    <ul>
+        <!-- Link to Home page -->
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <!-- Link to DC information page -->
+        <li><a href="{{ url_for('dc') }}">DC</a></li>
+        <!-- Link to About Me page -->
+        <li><a href="{{ url_for('about') }}">About Me</a></li>
+    </ul>
+    
+    <!-- Display current date and time -->
+    <p>Current date and time: {{ current_time }}</p>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding -->
+    <meta charset="UTF-8">
+    <!-- Configure viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
+    <title>DC Universe</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Heading for the DC Universe page -->
+    <h2>Fun DC Facts</h2>
+    
+    <!-- Ordered list of DC facts -->
+    <ol>
+        <!-- DC Fact 1: Batman's No-Kill Policy -->
+        <li>Batman's No-Kill Policy: Unlike many other superheroes, Batman 
+            has a strict policy against killing his enemies. This moral code 
+            has been a defining characteristic of the Dark Knight and adds a 
+            layer of complexity to his character, as he navigates the line 
+            between justice and revenge.</li>
+        
+        <!-- DC Fact 2: Wonder Woman's Creator -->
+        <li>Wonder Woman's Creator: Wonder Woman was created by psychologist 
+            and writer William Moulton Marston. He envisioned her as a feminist 
+            icon, and her early stories often featured themes of female empowerment. 
+            Marston also played a key role in the development of the polygraph 
+            (lie detector).</li>
+        
+        <!-- DC Fact 3: The Multiverse Concept -->
+        <li>The Multiverse Concept: DC Comics introduced the concept of a multiverse, 
+            a vast array of parallel universes with alternate versions of characters, 
+            in the 1960s. This idea allowed for creative storytelling by exploring different 
+            iterations of beloved characters and has become a significant aspect of the 
+            DC Universe.</li>
+        
+        <!-- DC Fact 4: Superman's First Appearance -->
+        <li>Superman's First Appearance: Superman, one of the most iconic superheroes, 
+            made his first appearance in "Action Comics" #1 in 1938. Created by Jerry 
+            Siegel and Joe Shuster, Superman became the archetype for the superhero genre 
+            and laid the foundation for the entire superhero comic book industry.</li>
+    </ol>
+    
+    <!-- Unordered list of navigation links -->
+    <ul>
+        <!-- Link to Home page -->
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <!-- Link to Marvel information page -->
+        <li><a href="{{ url_for('marvel') }}">Marvel</a></li>
+        <!-- Link to About Me page -->
+        <li><a href="{{ url_for('about') }}">About Me</a></li>
+    </ul>
+    
+    <!-- Display current date and time -->
+    <p>Current date and time: {{ current_time }}</p>
+</body>
+
+</html>

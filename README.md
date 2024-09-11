@@ -31,6 +31,4 @@ This is a basic Flask web app that provides users with interesting facts about M
 └── requirements.txt        # Python dependencies
 
 For any questions, feel free to contact me:
-
-Name: Brandon Chaimiti
 Email: branchai.1234@gmail.com
